@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Producer | Ableton Live 12 Edition</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">AI Producer / Bridge v2</div>
+        <div class="connection-status" id="status">DAW CONNECTED</div>
+    </header>
+
+    <main class="main-container">
+        <section class="chat-panel">
+            <div class="history" id="chat">
+                <div class="message ai-msg">
+                    How can I help with your Ableton session today?
+                </div>
+            </div>
+            <div class="input-area">
+                <input type="text" id="userInput" placeholder="Synthesize a bassline, search 909 kicks..." autocomplete="off">
+                <button id="sendBtn">EXECUTE</button>
+            </div>
+        </section>
+
+        <aside class="status-panel">
+            <div class="status-card">
+                <div class="label">Current Activity</div>
+                <div class="value" id="activity">IDLE</div>
+            </div>
+            <div class="status-card" style="border-color: var(--accent-yellow);">
+                <div class="label">DAW Channel</div>
+                <div class="value">UDP: 5005</div>
+            </div>
+            <div class="status-card">
+                <div class="label">AI Brain</div>
+                <div class="value">Qwen2-VL 7B</div>
+            </div>
+        </aside>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
